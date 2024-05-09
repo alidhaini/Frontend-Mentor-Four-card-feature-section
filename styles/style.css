@@ -44,10 +44,10 @@
     width: 100%;
     border-top:0.3rem solid;
     border-radius: 4px;
-    box-shadow: 0px 2px 15px var(--clr-grayishBlue);
+    box-shadow: 0px 8px 10px var(--clr-grayishBlue);
     padding: 1rem;
     position: relative;
-    max-width: 16rem;
+    /* max-width: 16rem; */
 }
 
 .card-2-3{
@@ -103,20 +103,22 @@
     .title{
         /* background-color: red; */
         color: var(--clr-grayishBlue);
-        font-size: var(--size-lg);
+        font-size: var(--size-3xl);
         white-space: nowrap;
+        margin-bottom: 0.5rem;
     }
     .bolded-title{
         letter-spacing: 0.02rem;
         color: var(--clr-veryDarkBlue);
-        font-size: var(--size-lg);
+        font-size: var(--size-3xl);
         font-weight: 600;
         white-space: nowrap;
+        margin-bottom: 1rem;
     }
     .description{
         color: var(--clr-grayishBlue);
-        font-size: var(--size-xs);
-        max-width: 140vh;
+        font-size: var(--size-sm);
+        max-width: 55vh;
     }
     
     /* cards */
@@ -130,11 +132,13 @@
     }
     .card-item{
         /* background-color: var(--clr-blue); */
-        /* width: 15rem; */
+        width: 16rem;
+        height: 12rem;
         border-top: 0.3rem solid;
         border-radius: 4px;
-        box-shadow: 0px 2px 15px var(--clr-grayishBlue);
-        padding: 1rem;
+        /* box-shadow: 0px 2px 15px var(--clr-grayishBlue); */
+        padding: 1.5rem 1rem 0rem 1.5rem;
+        /* background-color: red; */
     }
    
     .card-item-1{
@@ -154,16 +158,19 @@
         font-weight: 600;
         font-size: 1rem;
         color: var(--clr-veryDarkBlue);
+        margin-bottom: 0.5rem;
     }
     
     .card-item__description{
-        font-size: var(--size-xs);
+        font-size: 10px;
         color: var(--clr-grayishBlue);
+        margin-bottom: 0.5rem;
     }
     
     .card-item__icon{
-        width: 2.5rem;
+        width: 3rem;
         margin-top: 1rem;
+        /* margin-bottom: 1rem; */
         float: right;
     }
 }
