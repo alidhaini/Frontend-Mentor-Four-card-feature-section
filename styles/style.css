@@ -1,62 +1,45 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    padding-top: 4rem;
-    padding-bottom: 3rem;   
+.container{
+    padding: 5rem 1rem;
 }
-
 /* header */
 .header{
-    width: 80%; 
     text-align: center;
+    margin-bottom: 2rem;
 }
 .title{
-    /* background-color: red; */
-    color: var(--clr-grayishBlue);
-    font-size: var(--size-lg);
+    color: var(--clr-veryDarkBlue);
+    font-size: var(--size-2xl);
     white-space: nowrap;
+    font-weight: 200;
 }
 .bolded-title{
-    letter-spacing: 0.02rem;
     color: var(--clr-veryDarkBlue);
-    font-size: var(--size-lg);
+    font-size: var(--size-2xl);
     font-weight: 600;
     white-space: nowrap;
+    margin-bottom: 1rem;
 }
 .description{
     color: var(--clr-grayishBlue);
-    font-size: var(--size-xs);
+    font-size: var(--size-base);
     font-weight: 400;
+    line-height: 1.8;
 }
 
 /* cards */
 .cards-wrapper{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1.5rem;
 }
 .card-item{
-    /* background-color: var(--clr-blue); */
-    width: 100%;
-    border-top:0.3rem solid;
-    border-radius: 4px;
-    box-shadow: 0px 8px 10px var(--clr-grayishBlue);
-    padding: 1rem;
-    position: relative;
-    /* max-width: 16rem; */
+    border-top:0.4rem solid;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 2px 16px hsl(180, 62%, 55%, 0.15);
+    margin-bottom: 1rem;
 }
-
-.card-2-3{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
 .card-item-1{
     border-top-color: var(--clr-cyan);
 }
@@ -72,106 +55,64 @@ body{
 
 .card-item__title{
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--clr-veryDarkBlue);
+    margin-bottom: 0.5rem;
 }
 
 .card-item__description{
-    font-size: var(--size-xs);
+    font-size: var(--size-base);
     color: var(--clr-grayishBlue);
+    margin-bottom: 4rem;
+    line-height: 1.8;
 }
 
 .card-item__icon{
-    width: 2.5rem;
-    margin-top: 1rem;
-    float: right;
+    display: block;
+    margin-left: auto;
 }
 
 @media (min-width:1024px) {
-    body{
-        flex-direction: column;
-        padding-top: 4rem;
-        gap: 3rem;
-    }
-    
     /* header */
     .header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        max-width: 500px;
+        margin: auto;
     }
     .title{
-        /* background-color: red; */
-        color: var(--clr-grayishBlue);
         font-size: var(--size-3xl);
         white-space: nowrap;
-        margin-bottom: 0.5rem;
     }
     .bolded-title{
         letter-spacing: 0.02rem;
-        color: var(--clr-veryDarkBlue);
         font-size: var(--size-3xl);
         font-weight: 600;
         white-space: nowrap;
-        margin-bottom: 1rem;
     }
     .description{
-        color: var(--clr-grayishBlue);
-        font-size: var(--size-sm);
-        max-width: 55vh;
+        font-size: var(--size-base);
+        margin-bottom: 4rem;
     }
     
     /* cards */
     .cards-wrapper{
+        max-width: 1400px;
+        flex-wrap: wrap;
         flex-direction: row;
-        /* align-items: center; */
-        /* justify-content: center; */
-        gap: 1.5rem;
-        /* background-color: red; */
-        /* max-width: 0rem; */
+        align-items: center;
+        justify-content: center;
+        margin: auto;
     }
     .card-item{
-        /* background-color: var(--clr-blue); */
-        width: 16rem;
-        height: 12rem;
-        border-top: 0.3rem solid;
-        border-radius: 4px;
-        /* box-shadow: 0px 2px 15px var(--clr-grayishBlue); */
-        padding: 1.5rem 1rem 0rem 1.5rem;
-        /* background-color: red; */
+        width: 400px;
+        max-width: 500px;
     }
-   
-    .card-item-1{
-        border-top-color: var(--clr-cyan);
-    }
-    .card-item-2{
-        border-top-color: var(--clr-red);
-    }
+
+    .card-item-1,
     .card-item-3{
-        border-top-color: var(--clr-orange);
+        transform: translateY(50%);
     }
-    .card-item-4{
-        border-top-color: var(--clr-blue);
-    }
-    
-    .card-item__title{
-        font-weight: 600;
-        font-size: 1rem;
-        color: var(--clr-veryDarkBlue);
-        margin-bottom: 0.5rem;
-    }
-    
+
     .card-item__description{
-        font-size: 10px;
-        color: var(--clr-grayishBlue);
-        margin-bottom: 0.5rem;
-    }
-    
-    .card-item__icon{
-        width: 3rem;
-        margin-top: 1rem;
-        /* margin-bottom: 1rem; */
-        float: right;
+        margin-bottom: 4rem;
     }
 }

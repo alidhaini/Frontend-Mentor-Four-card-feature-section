@@ -27,6 +27,8 @@
     --size-8xl: 6rem;
     --size-9xl: 8rem;
     --size-10xl: 10rem;
+
+
 }
 
 
@@ -44,9 +46,9 @@ html {
 
 body {
     font-family: 'Poppins';
-    background-color: var(--clr-white);
     font-size: 15px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    background-color: var(--clr-VeryLightGray);
 }
 
 img,
