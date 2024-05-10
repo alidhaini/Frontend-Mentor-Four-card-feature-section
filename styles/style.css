@@ -1,5 +1,5 @@
 .container{
-    padding: 5rem 1rem;
+    padding: 6rem 1rem;
 }
 /* header */
 .header{
@@ -79,12 +79,12 @@
         margin: auto;
     }
     .title{
-        font-size: var(--size-3xl);
+        font-size: var(--size-4xl);
         white-space: nowrap;
     }
     .bolded-title{
         letter-spacing: 0.02rem;
-        font-size: var(--size-3xl);
+        font-size: var(--size-4xl);
         font-weight: 600;
         white-space: nowrap;
     }
@@ -113,6 +113,6 @@
     }
 
     .card-item__description{
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 }
